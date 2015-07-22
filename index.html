@@ -22,7 +22,8 @@ class: title middle left
 
 ### Accessibility at edX
 
-* edX [Web Accessibility Policy](https://www.edx.org/accessibility) <https://www.edx.org/accessibility>
+* edX [Web Accessibility Policy](https://www.edx.org/accessibility) 
+  * <https://www.edx.org/accessibility>
   * We understand and respect the unique needs and perspectives of the edX global community
   * We value every learner, and are committed to being a leader in expanding access to all, including learners with disabilities
   * Our goal is to ensure out software conforms with the Web Content Accessibility Guidelines ("WCAG") 2.0 Level AA
@@ -89,7 +90,7 @@ class: shift-down
 ---
 class: title middle right shift-up
 
-### Problem: All (plain) text is created equal
+### Problem: All text is created equal
 
 .subtitle[Solution: Markup to the rescue!]
 
@@ -334,22 +335,41 @@ class: center
 
 <figure style="width: 25%; float: left">
 <img src="assets/QRCodeAccessibleContent.png" alt="QRCode"/>
-<figcaption>Accessibility Best Practices Guidance for Content Providers<br><a href="http://j.mp/1OxEzya">http://j.mp/1OxEzya</a></figcaption>
+<figcaption>Accessibility Best Practices Guidance for Content Providers<br><a href="http://j.mp/edx-a11y-bp">http://j.mp/edx-a11y-bp</a></figcaption>
 </figure>
 <figure style="width: 25%; float: left">
 <img src="assets/QRCodeDeveloperGuide.png" alt="QRCode"/>
-<figcaption>edX Developers Guide - edX Accessibility Guidelines<br><a href="http://j.mp/18Y2l77">http://j.mp/18Y2l77</a></figcaption>
+<figcaption>edX Developers Guide - edX Accessibility Guidelines<br><a href="http://j.mp/edx-a11y-dev">http://j.mp/edx-a11y-dev</a></figcaption>
 </figure>
 <figure style="width: 25%; float: left">
 <img src="assets/QRCodeAccessibleStyleguide.png" alt="QRCode"/>
-<figcaption>UX Pattern Library - Styleguide: Accessibility<br><a href="http://j.mp/1BriKHU">http://j.mp/1BriKHU</a></figcaption>
+<figcaption>UX Pattern Library - Styleguide: Accessibility<br><a href="http://j.mp/edx-a11y-ux">http://j.mp/edx-a11y-ux</a></figcaption>
 </figure>
 
 </textarea>
     <script src="//gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create({ratio: '16:9'});
+      var slideshow = remark.create({
+        ratio: '4:3',
+        // Navigation options
+        navigation: {
+          // Enable or disable navigating using scroll
+          // Default: true
+          // Alternatives: false
+          scroll: false,
+
+          // Enable or disable navigation using touch
+          // Default: true
+          // Alternatives: false
+          touch: true,
+
+          // Enable or disable navigation using click
+          // Default: false
+          // Alternatives: true
+          click: true
+        },
+    });
     </script>
   </body>
 </html>
