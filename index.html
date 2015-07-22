@@ -16,7 +16,16 @@ class: title middle left
 
 .subtitle[Mark Sadecki - Accessibility Coordinator]
 
-.thirdtitle[Training - 2015-03-26]
+.thirdtitle[Training for Course Teams]
+
+---
+
+### Accessibility at edX
+
+* edX [Web Accessibility Policy](https://www.edx.org/accessibility) <https://www.edx.org/accessibility>
+  * We understand and respect the unique needs and perspectives of the edX global community
+  * We value every learner, and are committed to being a leader in expanding access to all, including learners with disabilities
+  * Our goal is to ensure out software conforms with the Web Content Accessibility Guidelines ("WCAG") 2.0 Level AA
 
 ---
 
@@ -26,7 +35,7 @@ class: title middle left
 
 .subtitle[Web Content Accessibility Guidelines 2.0]
 
-.thirdtitle[Our goal is to comply with WCAG 2 AA]
+.thirdtitle[Our goal is to conform with WCAG 2 AA]
 
 ---
 ### WCAG 2.0 Core Principles
@@ -65,6 +74,7 @@ class: title middle right
 * Tables (of text)
 * PDFs (of text and images)
 * eBooks (of text and images)
+* Assessments 
 
 ---
 class: shift-down
@@ -74,17 +84,12 @@ class: shift-down
 * is accessible
 * is translatable
 * .highlight[can be read by *software*] (like Assistive Technology)
-* can be converted into other formats
+* can be transformed into other formats
 
 ---
 class: title middle right shift-up
 
-### We NEED to TEXT all the things
-
----
-class: title middle right shift-up
-
-### Problem: All text is created equal
+### Problem: All (plain) text is created equal
 
 .subtitle[Solution: Markup to the rescue!]
 
@@ -112,6 +117,7 @@ What "role" does the text play?
 * Is it a .highlight[link]?
 * An .highlight[iframe]?
 * Just a .highlight[paragraph]?
+* Does it identify a column or row in a .highlight[table]?
 
 *AT provides direct and enhanced access to all of these (and more). This functionality is not possible without the right markup.*
 
@@ -189,11 +195,12 @@ class: title middle left
 
 * Can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user.
 * Authoring useful alt attribute content requires the author to carefully consider the .highlight[context] in which the image appears and the .highlight[function] that image may have in that context.
-* Needs to be an appropriate .highlight[functional replacement] for the image. 
+* Needs to be an appropriate .highlight[functional replacement] for the image.
+* Can't be too long or require additional markup
 
 ---
 
-### How do I determine what is *appropriate* alt content? 
+### How do I determine what is *useful* alt content? 
 
 *A good place to start is by asking the following questions:*
 
@@ -293,6 +300,7 @@ Next slide!
 
 ### More information
 
+* [edX Best Practices for Describing Images](https://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/accessibility/best_practices_course_content_dev.html#use-best-practices-for-describing-images)<br><j.mp/edx-a11y-images>
 * Resources on Alternative Text for Images<br><http://www.w3.org/WAI/alt/>
 * W3C WAI Images Tutorial<br><http://www.w3.org/WAI/tutorials/images/>
 * HTML5 - 4.7.1.1 Requirements for providing text to act as an alternative for images<br><http://www.w3.org/TR/html5/embedded-content-0.html#alt>
@@ -303,7 +311,7 @@ class: shift-down
 ## Video
 
 * All sound needs to have a textual equivalent
-  * Captions
+  * Timed Text Captions
   * Transcript
 
 * All on screen text needs to have an audible equivalent
@@ -315,23 +323,9 @@ class: shift-down
 ### Audio Description Demo
 
 <figure style="margin-top: -10px">
-<iframe width="640" height="360" src="https://www.youtube.com/embed/B8BD9txkGL4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+<iframe title="Audio Description Example" width="640" height="360" src="https://www.youtube.com/embed/B8BD9txkGL4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 <figcaption>Audio description describes unspoken text displayed on screen, and visual content that is crucial to understanding the video content.  Audio description is helpful to the visually impaired in the same way captions are helpful to the hearing impaired.</figcaption>
 </figure>
-
----
-
-### What is *content*?
-
-**Scope:** *Focused on content created using edX Studio*
-
-* .highlight[Text]
-* .highlight[Images]
-* .highlight[Video]
-* Lists (of text)
-* Tables (of text)
-* PDFs (of text and images)
-* eBooks (of text and images)
 
 ---
 class: center
@@ -340,14 +334,14 @@ class: center
 
 <figure style="width: 25%; float: left">
 <img src="assets/QRCodeAccessibleContent.png" alt="QRCode"/>
-<figcaption>Building and Running an edX Course - Guidelines for Creating Accessible Content<br><a href="http://j.mp/1HH7AXO">http://j.mp/1HH7AXO</a></figcaption>
+<figcaption>Accessibility Best Practices Guidance for Content Providers<br><a href="http://j.mp/1OxEzya">http://j.mp/1OxEzya</a></figcaption>
 </figure>
 <figure style="width: 25%; float: left">
-<img src="assets/QRCodeAccessibleContent.png" alt="QRCode"/>
+<img src="assets/QRCodeDeveloperGuide.png" alt="QRCode"/>
 <figcaption>edX Developers Guide - edX Accessibility Guidelines<br><a href="http://j.mp/18Y2l77">http://j.mp/18Y2l77</a></figcaption>
 </figure>
 <figure style="width: 25%; float: left">
-<img src="assets/QRCodeAccessibleContent.png" alt="QRCode"/>
+<img src="assets/QRCodeAccessibleStyleguide.png" alt="QRCode"/>
 <figcaption>UX Pattern Library - Styleguide: Accessibility<br><a href="http://j.mp/1BriKHU">http://j.mp/1BriKHU</a></figcaption>
 </figure>
 
