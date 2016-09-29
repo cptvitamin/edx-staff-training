@@ -9,6 +9,16 @@
     .scale30 {
       width: 30%; 
     }
+    .affected {
+        float: right;
+        width: 35%;
+        padding: 1em;
+        margin: 0.5em;
+        background-color: #D9F1FB;
+        font-size: 100%;
+    }
+    .affected h4 { }
+    #timeline {width: 100%!important; height: 800px!important;}
   </style>
   <body>
 <label for="source" class="sr">Slide Deck</label>
@@ -16,11 +26,11 @@
 
 class: title middle left
 
-# Accessibility Training
+# Accessibility at edX
 
-.subtitle[All-hands: September 8, 2015]
+.subtitle[All-hands: July 26, 2016]
 
-.thirdtitle[Introduction]
+.thirdtitle[Accessibility training season is upon us!]
 
 ---
 
@@ -34,12 +44,13 @@ class: title middle right
 
 ---
 
-### Agenda
+### What we will cover
 
-* Basic introduction to accessibility
+* *Basic* introduction to accessibility
 * Accessibility at edX
 * Overview of legal obligations
-* ***Edge training course***
+* Upcoming DOJ deliverables
+* Updated training course for 2016
 * Practical accessibility training/demo (time permitting)
   
 ---
@@ -58,14 +69,14 @@ class: title middle right
 ---
 name: iphone
 
-### iPhone
+### Case Study: Apple iPhone
 
 .float-right.scale25[![iPhone 6 in various sizes and colors.](assets/iphone.jpg)]
 
-*Arguably one of the most intuitive hardware and software products*
+*Arguably one of the most intuitive hardware and software products available to the public*
 
-* Great-grandmas can use it
-* Toddlers can figure it out
+* Grandmothers can send text messages
+* Toddlers can make in-app purchases
 
 <div style="display: block; clear:both"></div>
 ---
@@ -76,7 +87,7 @@ template: iphone
 
 * Accessible
  * Used by 70% of blind smartphone users
- * Makes hardware-based Assistive Technology unnecessary
+ * Makes hardware-based Assistive Technology a thing of the past
 
 ---
 ### How does quality = accessibility?
@@ -84,28 +95,51 @@ template: iphone
 * Intuitive to use
 * Customizable 
 * Gives users options/choice
-  * Input
-  * Output
+ 
+#### Where do we start?
+
+Helps to think of Human-Computer Interaction as simply:
+  
+* Input
+* Output
 
 ---
-### Human-Computer Interaction
+### A brief history of...
 
-Problems:
+.float-right.scale50[![Screenshot of terminal as seen in Movie Wargames.](assets/falken.jpg)]
+
+Human-Computer Interaction (HCI)
+
+Back in the olden days:
 
 * Input
-  * Support for too few (mouse)
+  * Text
 * Output
-  * Support for too many (images, video, audio, PDF, spreadsheets, simulations)
+  * Text
 
 ---
-### Human-Computer Interaction
+### Human-Computer Interaction (HCI)
+
+.float-right.scale50[![Screenshot of windows 3.1.](assets/win31.png)]
+
+Introduced some accessibility challenges:
+
+* Input
+  * Support for pointing devices
+* Output
+  * Support for images, video, audio, PDF, spreadsheets, simulations
+
+---
+### Human-Computer Interaction (HCI)
+
+.float-right.scale50[![Image of Tom Cruise controlling computer with gestures in Minority Report.](assets/tomcruise.jpg)]
 
 Solutions:
 
 * Input
-  * Support the keyboard
+  * Always support the keyboard
 * Output
-  * Text all the things
+  * Always make available as text
 
 ---
 ### Keyboard support (Input)
@@ -116,6 +150,7 @@ Solutions:
   * Sip-and-puff
   * Speech input
   * On-screen keyboards
+  * Gesture-based input devices
 
 ---
 ### Text all the things (Output)
@@ -130,15 +165,79 @@ Text can:
 * be assigned meta (magical) properties through the power of markup,
 * be read by machines!
 
+*Understanding these basic challenges and solutions will make more advanced accessibility concepts easier to understand.*
+
+---
+
+class: title middle left
+
+## WCAG 2.0 AA
+
+.subtitle[Web Content Accessibility Guidelines 2.0]
+
+.thirdtitle[How we measure conformance]
+
+---
+### WCAG 2.0 
+
+Technical set of guidelines published by the W3C in 2008
+
+* 4 Principles
+* 12 Guidelines
+* 65 Success Criteria - Testable Statements
+  * (38 applicable to Level AA)
+* Hundreds of Techniques and supporting documents
+
+---
+
+### WCAG 2.0 Core Principles
+
+* **Perceivable:**<br>Content must be presented in a way that all users can perceive it
+* **Operable:**<br>Components and navigation must be operable
+* **Understandable:**<br>Information and navigation must be understandable
+* **Robust:**<br>Content must be robust enough that it can be interpreted by a wide variety of user agents including assistive technology
+
+---
+
+### Principle 1: Perceivable
+
+* 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.
+* 1.2 Time-based Media: Provide alternatives for time-based media.
+* 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.
+* 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+---
+
+### Principle 2: Operable
+
+* 2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+* 2.2 Enough Time: Provide users enough time to read and use content.
+* 2.3 Seizures: Do not design content in a way that is known to cause seizures.
+* 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+---
+
+### Principle 3: Understandable
+
+* 3.1 Readable: Make text content readable and understandable.
+* 3.2 Predictable: Make Web pages appear and operate in predictable ways.
+* 3.3 Input Assistance: Help users avoid and correct mistakes.
+
+---
+
+### Principle 4: Robust
+
+* 4.1 Compatible: Maximize compatibility with current and future user agents, including assistive technologies.
+
 ---
 
 class: title middle right
 
-## Accessibility at edX
+## edX Accessibility Initiative
 
 .subtitle[Legal obligations]
 
-.thirdtitle[Then and now]
+.thirdtitle[Upcoming milestones]
 
 ---
 ### Goals, Values, Vision, and Mission
@@ -152,9 +251,9 @@ The word *everyone* is by definition "inclusive." It includes all humans, regard
 ---
 ### Accessibility at edX
  
-* Demonstrated commitment since our inception
-* Gives the Open edX Platform a market advantage
 * Important to our learners and members
+* Gives the Open edX Platform a market advantage
+  * Regulation is coming (508 Refresh - ANPRM)
 * Subject to terms of legal agreement with the Department of Justice
  
 ---
@@ -168,7 +267,7 @@ class: title middle right
 .thirdtitle[Department of Justice]
 
 ---
-### Settlement agreement
+### The edX/DOJ settlement agreement
 
 * Discussions started in 2013
 * Settlement agreement reached in April 2015
@@ -178,39 +277,71 @@ class: title middle right
 ---
 ### Topics covered
 
-* Policy
+* Policy ([edx.org/accessibility](http://edx.org/accessibility))
 * Support
 * Documentation
-* .highlight[**Training**]
+* Training
 * Outside Audit
 * Remediation
 * Conformance (WCAG 2.0 Level AA)
 * Reporting
 
 ---
-class: title middle left
 
-## WCAG 2.0 AA
+### Deliverables Gantt Chart
 
-.subtitle[Web Content Accessibility Guidelines 2.0]
-
-.thirdtitle[Our commitment is to conform with WCAG 2.0 AA]
+  <div id="timeline"></div>
 
 ---
-### WCAG 2.0 Core Principles
 
-* **Perceivable:**<br>Content must be presented in a way that all users can perceive it
-* **Operable:**<br>Components and navigation must be operable
-* **Understandable:**<br>Information and navigation must be understandable
-* **Robust:**<br>Content must be robust enough that it can be interpreted by a wide variety of user agents including assistive technology
+### Upcoming milestones/deadlines/deliverables
+
+.affected[
+**October 2nd, 2016**
+]
+
+* edx.org/LMS/Mobile must conform to WCAG 2.0 AA
+* Compliance Reporting
+* Bug Fix Policy
+* Annual Training
 
 ---
-### WCAG 2.0 
 
-* 4 Principles
-* 12 Guidelines
-* 65 Success Criteria (38 applicable to Level AA
+### Upcoming milestones/deadlines/deliverables
 
+.affected[
+**October 2nd, 2016**
+]
+
+* .highlight[edx.org/LMS/Mobile must conform to WCAG 2.0 AA]
+* Compliance Reporting
+* Bug Fix Policy
+* .highlight[Annual Training]
+
+---
+
+### Conformance deadline
+
+*a11y is **our** r12y*
+
+* Do I have to make this accessible, too?
+* Is this covered under the agreement?
+* This is going to be hard/take a lot of work to make accessible. Do we still have to do it?
+* How many users does this really affect?
+
+---
+
+### Conformance deadline
+
+*a11y is **our** r12y*
+
+* Do I have to make this accessible, too? .highlight[most likely, yes]
+* Is this covered under the agreement? .highlight[most likely, yes]
+* This is going to be hard/take a lot of work to make accessible. Do we still have to do it? .highlight[yes]
+* How many users does this really affect? <br/>.highlight[impossible to know, but it's more than you think]
+ 
+*edX is a **busy** place.  If you're working on something that **may** fall under the purview of our agreement, and we haven't talked yet, **please** reach out.*
+  
 ---
 
 class: title middle right
@@ -220,282 +351,21 @@ class: title middle right
 .thirdtitle[What we need from you]
 
 ---
+### Annual Training obligation
 
-### Edge Course
+As part of our agreement with the DOJ, we have agreed to train *all* edX staff and engineering contractors annually.
 
-* All this and more
-* [Available later this week](https://edge.edx.org/courses/course-v1:edX+AC101+2015/courseware/c9b63d4252714bbcae7abc0a89f5ec82/736a1f3944624a6688c607a519e2dbef/)
-* Should take 2 hours
+* New and improved course training course
+* Available early next week (look for an email from your Manager)
+* Should take 2-3 hours
 * Study Halls available
-* All staff obligated to complete training by .highlight[**September 29, 2015**]
+* *All staff* obligated to complete training by .highlight[**September 9th, 2016**]
 
 ---
+
 class: title middle right
 
 ## Questions?
-
----
-
-class: title middle right
-
-## Web Content Accessibility 
-
-.subtitle[*In plain English*]
-
----
-
-class: shift-down
-
-## Text
-
-* is accessible
-* is translatable
-* .highlight[can be read by *software*] (like Assistive Technology)
-* can be transformed into other formats
-
----
-class: title middle right shift-up
-
-### Problem: All text is created equal
-
-.subtitle[Solution: Markup to the rescue!]
-
-.thirdtitle[*By itself, text has no semantic value*]
-
----
-
-### Why is markup so important?
-
-.highlight[*Software is really good at reading markup*]
-
-* Assistive Technology (AT) relies on markup to determine the "role" the text plays
-* AT provides [shortcuts](http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm) to interact with markup
-* AT users benefit *greatly* from these shortcuts
-* Without proper markup, its just giant blobs of text
-
----
-
-### Semantic Markup
-
-What "role" does the text play?
-
-* Is it a .highlight[heading]?
-* Is it a list, or an item in a .highlight[list]?
-* Is it a .highlight[link]?
-* An .highlight[iframe]?
-* Just a .highlight[paragraph]?
-* Does it identify a column or row in a .highlight[table]?
-
-*AT provides direct and enhanced access to all of these (and more). This functionality is not possible without the right markup.*
-
----
-
-### Headings
-
-* All AT provides multiple ways for users to browse by heading (examples):
-  * Next heading (at any level)
-  * Next level 3 heading
-  * First heading
-  * First level 2 heading
-  
-.highlight[Logical order is important]
-  
-*This won't work if your text just looks like a heading*
-
-### This is a level 3 heading
-
-.fake-heading[This is not a level 3 heading]  
-
----
-layout: true
-
-### Links
-
----
-
-.float-right.scale50[![Screenshot of links list in Voiceover](assets/mIsec.png)]
-
-* All AT provides multiple ways of navigating between links on a page:
-  * By tabbing (of course)
-  * In an .highlight[interactive list]
-   * Where links can be directly accessed by .highlight[how they are spelled] or their .highlight[order in the document]
-
----
-  
-Bad:
-
-* [Click here](#) to register
-* Article teaser [More...](#)
-* [Download](#) the white paper
-
-Good:
-
-* [Register for edX training](#)
-* [What is accessible content: Full Text](#)
-* [Download the PDF textbook](#)
-
----
-layout: false
-
-### Color contrast
-
-* Minimum contrast ratio of 4.5 to 1
-* Large text can have a ratio of 3 to 1
-    * 18pt and 14pt bold<br>(roughly equivalent to 1.2 and 1.5 em or to 120% or 150% )
-    
-  <p style="font-size: 18pt">This is 18pt text</p>
-  <p style="font-size: 14pt; font-weight: bold;">This is 14pt bold</p>
-  
-*Contrast ratios or nearly impossible to analyze without the help of [color contrast analyzing tools/software](#tools)*
-
----
-class: title middle left
-
-## Images
-
-.subtitle[We need to text all the images, too!]
-
-.thirdtitle[The ALT Attribute]
-
----
-### Text alternatives (using the alt attribute)
-
-* Can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user.
-* Authoring useful alt attribute content requires the author to carefully consider the .highlight[context] in which the image appears and the .highlight[function] that image may have in that context.
-* Needs to be an appropriate .highlight[functional replacement] for the image.
-* Can't be too long or require additional markup
-
----
-
-### How do I determine what is *useful* alt content? 
-
-*A good place to start is by asking the following questions:*
-
-* Why is the image being included in a page? 
-* What is its purpose?
-* Does it provide useful information?
-* Does it perform a function? 
-* Is it a label for an interactive element?
-* Is it purely decorative?
-
-*Answers to these questions can help you use a simple decision tree:*
- 
----
-
-### Is this image the only content of a link or form control?
-
-**Yes:** 
-       
-.float-right.center[![Screenshot of Introduction to Linux course card with an arrow highlighting the image linked to the course intro video](assets/EFAou.png)<br>![Screenshot of various social icons](assets/7xE4S.png)]
-   
-Use the alt attribute communicate the destination of the link or action taken
-
-*A good alt value for this image would be "Watch the 'Introduction to Linux' course video", which describes the action, not the image.*
-        
-**No:** Next slide!
-
----
-
-### Does this image contain text?
-
-**Yes:** 
- 
-.float-right.scale40[![Screenshot of stylized text that represents the 3 main topics on the page, verbatim](assets/T2axY.png)]
-       
-* If the text in the image is also present as real text nearby, .highlight[use an empty alt attribute] to hide the image from screen reader users.
-
-* If the text in the image is just for visual effect, use an empty alt attribute.
-
-* Otherwise, use the alt attribute to include the communicative text of the image.
-        
-**No:** Next slide! 
- 
----
-
-### Does this image contain text?
-
-**Yes:** 
- 
-.float-right.scale40[![Screenshot of computer code transparently overlaying a computer keyboard](assets/LFS01_Ch0_Screen7.jpg)]
-             
-* If the text in the image is also present as real text nearby, use an empty alt attribute to hide the image from screen reader users.
- 
-* If the text in the image is just for visual effect, .highlight[use an empty alt attribute].
-
-* Otherwise, use the alt attribute to include the communicative text of the image.
-        
-**No:** Next slide!
-
----
-
-### Does this image contain text?
-
-**Yes:** 
-
-<figure class="float-right scale40">
-  <img src="assets/fGqVI.png" alt="Screenshot of stylized text illustrating 3 points">
-  <figcaption>Appropriate alt for this image would be: "1: Things change in linux. 2: We've repeated some things in the class. 3: We've tried to avoid holy wars."</figcaption>
-</figure>
-             
-* If the text in the image is also present as real text nearby, use an empty alt attribute to hide the image from screen reader users.
-        
-* If the text in the image is just for visual effect, use an empty alt attribute.
-
-* Otherwise, use the alt attribute to .highlight[include the communicative text of the image].
-        
-**No:** Next slide! 
-
----
-
-### Does the image contribute meaning to the current page or context?
-
-* **Yes**, and it’s a simple graphic or photograph: .highlight[the alt attribute should briefly describe the image in a way that conveys that meaning].
-* **Yes**, and it’s a graph or complex piece of information: .highlight[include the information contained in the image elsewhere on the page].
-* **Yes**, but a suitable alt text is unknown at the time of publication (for example on a photo upload site): .highlight[provide an alt attribute or caption for the image that includes as much useful information as possible].
-        
-**No:**
-
-Next slide!
- 
----
-
-### Is the image purely decorative or not intended for the user?
-        
-* Use an .highlight[empty alt attribute].  This will make it invisible to a screen reader user.
-
----
-
-### More information
-
-* [edX Best Practices for Describing Images](https://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/accessibility/best_practices_course_content_dev.html#use-best-practices-for-describing-images)<br><j.mp/edx-a11y-images>
-* Resources on Alternative Text for Images<br><http://www.w3.org/WAI/alt/>
-* W3C WAI Images Tutorial<br><http://www.w3.org/WAI/tutorials/images/>
-* HTML5 - 4.7.1.1 Requirements for providing text to act as an alternative for images<br><http://www.w3.org/TR/html5/embedded-content-0.html#alt>
-
----
-class: shift-down
-
-## Video
-
-* All sound needs to have a textual equivalent
-  * Timed Text Captions
-  * Transcript
-
-* All on screen text needs to have an audible equivalent
-  * Non-text content that is important to the context of the video must also have an audible equivalent<br>
-  .highlight[Audio Description]
-  
----
-
-### Audio Description Demo
-
-<figure style="margin-top: 0px">
-<iframe title="Audio Description Example" width="640" height="360" src="https://www.youtube.com/embed/B8BD9txkGL4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-<img src="assets/QRCodeAudioDescription.png" alt="QRCode to Youtube video demonstrating Audio Description" style="float: right;padding-top: 3em;"/>
-<figcaption>Audio description describes unspoken text displayed on screen, and visual content that is crucial to understanding the video content.  Audio description is helpful to the visually impaired in the same way captions are helpful to the hearing impaired.
-</figcaption>
-<a href="https://youtu.be/B8BD9txkGL4">https://youtu.be/B8BD9txkGL4</a>
-</figure>
 
 ---
 class: center
@@ -539,6 +409,172 @@ class: center
           click: false
         },
     });
+    </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["timeline"]});
+      google.setOnLoadCallback(drawChart);
+      window.addEventListener('resize', function(event){
+        drawChart()
+      });
+
+      function drawChart($scope) {
+        var container = document.getElementById('timeline');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+        
+        dataTable.addColumn({ type: 'string', id: 'Product' });
+        dataTable.addColumn({ type: 'string', id: 'Activity' });
+        dataTable.addColumn({ type: 'date', id: 'Start' });
+        dataTable.addColumn({ type: 'date', id: 'End' });
+        dataTable.addRows(
+[          
+    [   'Remediation',
+        '(18mon) Initial Remediation edx.org/LMS/Mobile',
+        new Date(2015, 3,1),
+        new Date(2016, 9,1)         ],/**/
+    
+    [   'Remediation',
+        '(18mon) Initial Remediation CMS',
+        new Date(2016, 9,1),
+        new Date(2018, 3,1)         ],/**/
+    
+    [   'Maintenance',
+        'Maintain Conformance edx.org/LMS/CMS/Mobile',
+        new Date(2015, 3,1),
+        new Date(2019, 3,1)         ],/**/
+
+    [   'Audit',
+        'External Audit',
+        new Date(2016, 1,1),
+        new Date(2016, 3,1)         ],/**/
+    
+    [   'Audit',
+        'External Audit',
+        new Date(2017, 1,1),
+        new Date(2017, 3,1)         ],/**/
+    
+    [   'Audit',
+        'External Audit',
+        new Date(2018, 1,1),
+        new Date(2018, 3,1)         ],/**/
+    
+    [   'Reporting',
+        'Compliance (@9mon)',
+        new Date(2015, 11,1),
+        new Date(2015, 12,1)         ],/**/
+    
+    [   'Reporting',
+        'Compliance (@18mon)',
+        new Date(2016, 08,1),
+        new Date(2016, 09,1)         ],/**/
+    
+    [   'Reporting',
+        'Compliance (@28mon)',
+        new Date(2017, 06,1),
+        new Date(2017, 07,1)         ],/**/
+    
+    [   'Reporting',
+        'Compliance (@40mon)',
+        new Date(2018, 06,1),
+        new Date(2018, 07,1)         ],/**/
+    
+    [   'Documentation',
+        '(90) Best Practices Documentation',
+        new Date(2015, 3,1),
+        new Date(2015, 6,1)         ],/**/
+    
+    [   'Documentation',
+        '(90) Best Practices Instructional/Course Materials',
+        new Date(2015, 3,1),
+        new Date(2015, 6,1)         ],/**/
+    
+    [   'Training',
+        '(180) Training (Internal)',
+        new Date(2015, 3,1),
+        new Date(2015, 9,1)         ],/**/
+
+    [   'Training',
+        'Training (Internal)',
+        new Date(2016, 8,1),
+        new Date(2016, 9,1)         ],/**/
+
+    [   'Training',
+        'Training (Internal)',
+        new Date(2017, 8,1),
+        new Date(2017, 9,1)         ],/**/
+
+    [   'Training',
+        'Training (Internal)',
+        new Date(2018, 8,1),
+        new Date(2018, 9,1)         ],/**/
+    
+    [   'Support',
+        '(30) Refer complaints to course teams',
+        new Date(2015, 3,1),
+        new Date(2015, 4,1)         ],/**/
+    
+    [   'Other',
+        '(90) Add Best Practices to MDC',
+        new Date(2015, 3,1),
+        new Date(2015, 6,1)         ],/**/
+    
+    [   'Other',
+        '(45) Adopt and Distribute Accessibility Policy',
+        new Date(2015, 3,1),
+        new Date(2015, 4,15)        ],/**/
+
+    [   'Other',
+        '(30) Designate Coordinator',
+        new Date(2015, 3,1),
+        new Date(2015, 4,1)         ],/**/
+
+    [   'Other',
+        '(90) Retain Consultant',
+        new Date(2015, 3,1),
+        new Date(2015, 6,1)         ],/**/
+
+    [   'Other',
+        '(18mon) Modify Bug Fix Policy',
+        new Date(2016, 8,1),
+        new Date(2016, 9,1)         ],/**/
+
+    [   'Other',
+        '(30) Modify Master Agreements',
+        new Date(2015, 3, 1),
+        new Date(2015, 4, 1)        ]/**/
+]);
+  
+          
+var options = {
+    timeline: { 
+        showRowLabels: true,
+        groupByRowLabel: true
+    },
+    colors: [
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+'#009CFC',
+    ],
+    avoidOverlappingGridLines: true,
+  };
+  chart.draw(dataTable, options);
+      }
     </script>
   </body>
 </html>
